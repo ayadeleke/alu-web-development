@@ -1,1 +1,1 @@
-# alu-web-development
+Script for basic html
