@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  background-color: skyblue;
+}
+main article {
+  flex: 2;
+  overflow-y: auto;
+}
+main aside {
+  flex: 1;
+  color: navy;
+}
+main aside {
+  flex: 1;
+  overflow-y: auto;
+}
