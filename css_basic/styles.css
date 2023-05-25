@@ -14,6 +14,7 @@ main {
   flex-direction: row;
   flex: auto;
   background-color: skyblue;
+  margin-top: 20px;
 }
 main article {
   flex: 2;
@@ -29,7 +30,7 @@ main aside {
 }
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 2;
   margin: 0;
 }
 nav ul li {
