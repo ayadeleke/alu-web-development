@@ -20,6 +20,10 @@ main article {
   flex: 2;
   overflow-y: auto;
 }
+.resized-image {
+  width: 400px;
+  height: auto;
+}
 main aside {
   flex: 1;
   color: navy;
