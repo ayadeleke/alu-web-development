@@ -27,3 +27,12 @@ main aside {
   flex: 1;
   overflow-y: auto;
 }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
