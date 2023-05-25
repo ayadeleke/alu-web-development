@@ -9,6 +9,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+.custom-link {
+  background-color: skyblue;
+  color: #ffffff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
 main {
   display: flex;
   flex-direction: row;
