@@ -9,15 +9,26 @@ body {
   display: flex;
   flex-direction: column;
 }
+.custom-link {
+  background-color: skyblue;
+  color: #ffffff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
 main {
   display: flex;
   flex-direction: row;
   flex: auto;
   background-color: skyblue;
+  margin-top: 20px;
 }
 main article {
   flex: 2;
   overflow-y: auto;
+}
+.resized-image {
+  width: 400px;
+  height: auto;
 }
 main aside {
   flex: 1;
@@ -29,7 +40,7 @@ main aside {
 }
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 2;
   margin: 0;
 }
 nav ul li {
