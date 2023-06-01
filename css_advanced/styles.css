@@ -305,12 +305,19 @@ main {
   margin-bottom: 0.1rem;
 }
 
-.faq_list {
+.faq_lists {
   display: flex;
   padding-left: 10%;
   padding-right: 10%;
 }
-.faq_item {
+
+.faq_lists2 {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+.faq_question {
   display: flex;
   flex: 50%;
   flex-direction: column;
@@ -322,22 +329,22 @@ footer {
   padding: 1rem;
   margin: -8px;
 }
-.ft-container {
+.footer_section {
   display: flex;
   flex-direction: column;
 }
-.nav-ft {
+.footer_nav {
   display: flex;
   justify-content: space-between;
   padding: 4rem 8rem 4rem 8rem;
 }
 
-.nav-ft div a {
+.footer_nav div a {
   margin-left: 0.4rem;
   margin-right: 0.5rem;
 }
 
-.ft-container p {
+.footer_section p {
   color: white;
   opacity: 0.35;
   text-align: center;
