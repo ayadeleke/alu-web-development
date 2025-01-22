@@ -1,4 +1,4 @@
-# 0x03. Caching
+# Caching
 
 ## Requirements
 
