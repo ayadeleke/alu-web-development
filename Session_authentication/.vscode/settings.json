@@ -1,0 +1,10 @@
+{
+    "cSpell.language": "en,lorem",
+    "cSpell.enableFiletypes": [
+        "gitignore",
+        "sass"
+    ],
+    "cSpell.words": [
+        "jsonify"
+    ]
+}
