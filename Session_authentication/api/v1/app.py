@@ -55,7 +55,6 @@ def before_request_handler():
                 '/api/v1/unauthorized/',
                 '/api/v1/forbidden/']
 
-
     if auth is not None and auth.require_auth(request.path, excluded):
         if auth.authorization_header(request) is None:
             abort(401)
