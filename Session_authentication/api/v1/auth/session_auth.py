@@ -1,4 +1,7 @@
-# api/v1/auth/session_auth.py
+#!/usr/bin/env python3
+""" Module of Users views
+"""
+
 
 from api.v1.auth.auth import Auth
 
