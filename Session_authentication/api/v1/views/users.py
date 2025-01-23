@@ -29,7 +29,7 @@ def view_one_user(user_id: str = None) -> str:
         # Handle the special case where user_id is "me"
         if request.current_user is None:
             abort(404)  # If user is not authenticated, return 404
-        return jsonify(request.current_user.to_json())  # Return the current user details
+        return jsonify(request.current_user.to_json())
 
     if user_id is None:
         abort(404)
