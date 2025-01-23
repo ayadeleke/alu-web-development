@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab2cfe41-1f81-49e7-85cf-0ce117169920" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api/v1/auth/session_auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/v1/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/views/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/views/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Python.app.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;Python.session_auth.executor&quot;: &quot;Run&quot;,
     &quot;Python.users.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -73,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737584017347</updated>
       <workItem from="1737584018753" duration="2302000" />
-      <workItem from="1737624596877" duration="7590000" />
+      <workItem from="1737624596877" duration="7907000" />
     </task>
     <servers />
   </component>
@@ -82,7 +82,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Session_authentication$session_auth.coverage" NAME="session_auth Coverage Results" MODIFIED="1737624664027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/v1/auth" />
-    <SUITE FILE_PATH="coverage/Session_authentication$app.coverage" NAME="app Coverage Results" MODIFIED="1737630277224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/v1" />
+    <SUITE FILE_PATH="coverage/Session_authentication$app.coverage" NAME="app Coverage Results" MODIFIED="1737632676137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/v1" />
     <SUITE FILE_PATH="coverage/Session_authentication$users.coverage" NAME="users Coverage Results" MODIFIED="1737628579706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/v1/views" />
   </component>
 </project>
