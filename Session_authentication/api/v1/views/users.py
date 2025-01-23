@@ -21,7 +21,7 @@ def get_user_me():
     Retrieve the authenticated User object.
     """
     if request.current_user is None:
-        abort(404)
+        return  jsonify({"error": "Unauthorized"}), 401
     return jsonify(request.current_user.to_dict()), 200
 
 @app_views.route("/users/<user_id>", methods=["GET"], strict_slashes=False)
