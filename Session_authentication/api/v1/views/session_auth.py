@@ -7,8 +7,10 @@ from api.v1.views import app_views
 import os
 
 
-@app_views.route('/auth_session/login', methods=['POST'], strict_slashes=False)
-@app_views.route('/auth_session/login/', methods=['POST'], strict_slashes=False)
+@app_views.route('/auth_session/login',
+                 methods=['POST'], strict_slashes=False)
+@app_views.route('/auth_session/login/',
+                 methods=['POST'], strict_slashes=False)
 def auth_session_login():
     """Handles POST /api/v1/auth_session/login for session authentication."""
     email = request.form.get('email')
@@ -33,7 +35,7 @@ def auth_session_login():
     if not user.is_valid_password(password):
         return jsonify({"error": "wrong password"}), 401
 
-    from api.v1.app import auth  # Import only where needed to avoid circular import
+    from api.v1.app import auth
     session_id = auth.create_session(user.id)
 
     response = jsonify(user.to_json())
