@@ -152,3 +152,9 @@ class Auth:
                                  reset_token=None)
         except NoResultFound:
             raise ValueError("Invalid reset token")
+
+    def generate_reset_token(self, email):
+        pass
+
+    def is_registered_email(self, email):
+        pass
