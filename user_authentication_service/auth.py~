@@ -86,20 +86,6 @@ class Auth:
         except NoResultFound:
             return None
 
-    def destroy_session(self, user_id: int) -> None:
-        """Destroys a user's session
-
-        Args:
-            user_id (int): User ID
-
-        Returns:
-            None
-        """
-        try:
-            self._db.update_user(user_id, session_id=None)
-        except NoResultFound:
-            pass
-
     def get_user_from_session_id(self, session_id: str) -> User:
         """Retrieve a user by session ID
 
@@ -117,19 +103,16 @@ class Auth:
         except NoResultFound:
             return None
 
-    def get_reset_password_token(self, email: str) -> str:
-        """Generate a reset password token for a user
+    def destroy_session(self, user_id: int) -> None:
+        """Destroys a user's session
 
         Args:
-            email (str): User email
+            user_id (int): User ID
 
         Returns:
-            str: Reset password token
+            None
         """
         try:
-            user = self._db.find_user_by(email=email)
-            reset_token = _generate_uuid()
-            self._db.update_user(user.id, reset_token=reset_token)
-            return reset_token
+            self._db.update_user(user_id, session_id=None)
         except NoResultFound:
-            raise ValueError("User does not exist")
+            pass
