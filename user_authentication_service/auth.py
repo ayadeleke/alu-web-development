@@ -8,16 +8,18 @@ from user import User
 import uuid
 
 
-def _hash_password(password: str) -> bytes:
+def _hash_password(password: str) -> str:
     """Hash password
 
     Args:
         password (str): String password
 
     Returns:
-        bytes: Password hashed
+        str: Password hashed as a string
     """
-    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+    hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+    return hashed.decode('utf-8')
+
 
 
 def _generate_uuid() -> str:
