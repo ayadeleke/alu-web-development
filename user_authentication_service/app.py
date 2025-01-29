@@ -15,6 +15,7 @@ def home():
 
 @app.route("/users", methods=["POST"], strict_slashes=False)
 def create_user():
+    """Create user function"""
     try:
         email = request.form.get("email")
         password = request.form.get("password")
