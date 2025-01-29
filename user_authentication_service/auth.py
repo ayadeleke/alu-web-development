@@ -153,8 +153,34 @@ class Auth:
         except NoResultFound:
             raise ValueError("Invalid reset token")
 
-    def generate_reset_token(self, email):
-        pass
+    def generate_reset_token(self, email: str) -> str:
+        """Generate a reset token for a registered email
 
-    def is_registered_email(self, email):
-        pass
+        Args:
+            email (str): User email
+
+        Returns:
+            str: Reset token
+        """
+        try:
+            user = self._db.find_user_by(email=email)
+            reset_token = _generate_uuid()
+            self._db.update_user(user.id, reset_token=reset_token)
+            return reset_token
+        except NoResultFound:
+            raise ValueError("User does not exist")
+
+    def is_registered_email(self, email: str) -> bool:
+        """Check if the email is registered
+
+        Args:
+            email (str): User email
+
+        Returns:
+            bool: True if email is registered, else False
+        """
+        try:
+            self._db.find_user_by(email=email)
+            return True
+        except NoResultFound:
+            return False
